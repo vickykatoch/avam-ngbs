@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StrategyComponent implements OnInit {
 
-  isOrderTicket: boolean = false;
+  isOrderTicket: boolean = true;
 
   constructor() { }
 

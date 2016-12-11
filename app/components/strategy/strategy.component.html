@@ -20,8 +20,8 @@
       </div>
     </div>
     <div class="card-block">
-      <avam-strategy-order-ticket></avam-strategy-order-ticket>
-      <avam-strategy-definition></avam-strategy-definition>
+      <avam-strategy-order-ticket *ngIf="isOrderTicket"></avam-strategy-order-ticket>
+      <avam-strategy-definition *ngIf="!isOrderTicket"></avam-strategy-definition>
     </div>
   </div>
 

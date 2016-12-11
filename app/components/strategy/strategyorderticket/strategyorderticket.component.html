@@ -9,50 +9,113 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-xs col-xs-sm">
+    <div class="col-xs">
       <div class="form-group">
-        <label for="market">Market
-        <input type="text" class="form-control form-control-sm" id="market">
-        </label>
+        <label for="market">Market</label>
+        <input type="number" class="form-control form-control-sm" id="market">
       </div>
     </div>
-    <div class="col-xs col-xs-sm">
+    <div class="col-xs">
       <div class="form-group">
-        <label for="target">Target
-        <input type="text" class="form-control form-control-sm" id="target">
-        </label>
+        <label for="target">Target</label>
+        <input type="number" class="form-control form-control-sm" id="target">
+
       </div>
     </div>
-    <div class="col-xs col-xs-sm">
+    <div class="col-xs">
       <div class="form-group">
-        <label for="delta">Delta
-        <input type="text" class="form-control form-control-sm" id="delta">
-        </label>
+        <label for="delta">Delta</label>
+        <input type="number" class="form-control form-control-sm" id="delta">
+
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs">
+    <div class="col-xs-4">
       <div class="strategy-leg-buy">
         <div class="header">2 YEAR</div>
-        <div class="col-xs-12 form-group">
-          <label for="limitPrice">Limit Price <input type="number" name="limitPrice" class="form-control form-control-sm"/></label>
+        <div class="detail">
+          <div class="row">
+            <div class="col-xs-12 form-group">
+              <label for="limitPrice">Limit Price</label>
+              <input type="number" name="limitPrice" class="form-control form-control-sm" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <label>Qty</label>
+              <input type="number" class="form-control form-control-sm" id="qty" />
+            </div>
+            <div class="col-xs-6">
+              <span style="display:inline">
+            <label style="display:inline">Drip</label>
+            <input type="number" class="form-control form-control-sm" id="drip" style="display:inline"/>
+          </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="col-xs">
+    <div class="col-xs-4">
       <div class="strategy-leg-sell">
-        <div class="header">3 YEAR</div>
-
+        <div class="header">2 YEAR</div>
+        <div class="detail">
+          <div class="row">
+            <div class="col-xs-12 form-group">
+              <label for="limitPrice">Limit Price</label>
+              <input type="number" name="limitPrice" class="form-control form-control-sm" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <label>Qty</label>
+              <input type="number" class="form-control form-control-sm" id="qty" />
+            </div>
+            <div class="col-xs-6">
+              <span style="display:inline">
+            <label style="display:inline">Drip</label>
+            <input type="number" class="form-control form-control-sm" id="drip" style="display:inline"/>
+          </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="col-xs">
+    <div class="col-xs-4">
       <div class="strategy-leg-sell">
-        <div class="header">5 YEAR</div>
-
+        <div class="header">2 YEAR</div>
+        <div class="detail">
+          <div class="row">
+            <div class="col-xs-12 form-group">
+              <label for="limitPrice">Limit Price</label>
+              <input type="number" name="limitPrice" class="form-control form-control-sm" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <label>Qty</label>
+              <input type="number" class="form-control form-control-sm" id="qty" />
+            </div>
+            <div class="col-xs-6">
+              <span style="display:inline">
+            <label style="display:inline">Drip</label>
+            <input type="number" class="form-control form-control-sm" id="drip" style="display:inline"/>
+          </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="row mt-1 ">
+    <div class="col-xs text-xs-right">
+      <!--<div class=" btn-group" >-->
+        <button type="button" class="btn btn-sm btn-danger">Submit</button>
+        <button type="button" class="btn btn-sm btn-primary">Reset</button>
+      <!--</div>-->
+    </div>
+
   </div>
 </form>
