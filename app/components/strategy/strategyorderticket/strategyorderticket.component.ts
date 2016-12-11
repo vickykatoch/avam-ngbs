@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   moduleId: module.id,
   selector: 'avam-strategy-order-ticket',
   templateUrl: './strategyorderticket.component.html',
-  styleUrls: ['./strategyorderticket.component.css']
+  styleUrls: ['../strategy.component.css']
 })
 export class StrategyOrderTicketComponent implements OnInit {
 
@@ -12,5 +12,4 @@ export class StrategyOrderTicketComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

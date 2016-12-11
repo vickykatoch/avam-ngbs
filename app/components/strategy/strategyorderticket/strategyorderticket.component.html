@@ -1,3 +1,58 @@
-<p>
-  strategyorderticket works!
-</p>
+<form class="container-fluid">
+  <div class="row">
+    <div class="col-xs">
+      <p><strong>Order Ticket [5vs7_Curve]</strong></p>
+
+    </div>
+    <div class="col-xs text-xs-right">
+      <button class="btn btn-sm btn-success">BUY</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs col-xs-sm">
+      <div class="form-group">
+        <label for="market">Market
+        <input type="text" class="form-control form-control-sm" id="market">
+        </label>
+      </div>
+    </div>
+    <div class="col-xs col-xs-sm">
+      <div class="form-group">
+        <label for="target">Target
+        <input type="text" class="form-control form-control-sm" id="target">
+        </label>
+      </div>
+    </div>
+    <div class="col-xs col-xs-sm">
+      <div class="form-group">
+        <label for="delta">Delta
+        <input type="text" class="form-control form-control-sm" id="delta">
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-5">
+      <div class="strategy-leg-buy">
+        <div class="header">2 YEAR</div>
+        <div class="col-xs-12 form-group">
+          <label for="limitPrice">Limit Price <input type="number" name="limitPrice" class="form-control form-control-sm"/></label>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-xs-5">
+      <div class="strategy-leg-sell">
+        <div class="header">3 YEAR</div>
+        
+      </div>
+    </div>
+
+     <div class="col-xs-5">
+      <div class="strategy-leg-sell">
+        <div class="header">5 YEAR</div>
+        
+      </div>
+    </div>
+  </div>
+</form>

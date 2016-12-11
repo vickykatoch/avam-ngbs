@@ -264,8 +264,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #373a3c;
-  background-color: #fff; }
+  color: #c8c8c8;
+  background-color: #272b30; }
 
 [tabindex="-1"]:focus {
   outline: none !important; }
@@ -530,7 +530,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #272b30;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
   transition: all .2s ease-in-out;
@@ -1313,7 +1313,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #eceeef; }
   .table .table {
-    background-color: #fff; }
+    background-color: #272b30; }
 
 .table-sm th,
 .table-sm td {
@@ -2193,7 +2193,7 @@ tbody.collapse.in {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #373a3c;
+  color: #c8c8c8;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -2720,7 +2720,7 @@ tbody.collapse.in {
   .nav-tabs .nav-item.open .nav-link:focus,
   .nav-tabs .nav-item.open .nav-link:hover {
     color: #55595c;
-    background-color: #fff;
+    background-color: #272b30;
     border-color: #ddd #ddd transparent; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
@@ -3073,23 +3073,23 @@ tbody.collapse.in {
 .card {
   position: relative;
   display: block;
-  margin-bottom: 0.75rem;
-  background-color: #fff;
+  margin-bottom: 0.25rem;
+  background-color: #272b30;
   border-radius: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.125); }
+  border: 1px solid rgba(0, 0, 0, 0.6); }
 
 .card-block {
-  padding: 1.25rem; }
+  padding: 0.25rem; }
   .card-block::after {
     content: "";
     display: table;
     clear: both; }
 
 .card-title {
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.25rem; }
 
 .card-subtitle {
-  margin-top: -0.375rem;
+  margin-top: -0.125rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -3099,7 +3099,7 @@ tbody.collapse.in {
   text-decoration: none; }
 
 .card-link + .card-link {
-  margin-left: 1.25rem; }
+  margin-left: 0.25rem; }
 
 .card > .list-group:first-child .list-group-item:first-child {
   border-top-right-radius: 0.25rem;
@@ -3110,10 +3110,11 @@ tbody.collapse.in {
   border-bottom-left-radius: 0.25rem; }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 0.25rem 0.25rem;
   margin-bottom: 0;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  background-image: linear-gradient(#484e55, #3a3f44 60%, #313539);
+  background-repeat: no-repeat; }
   .card-header::after {
     content: "";
     display: table;
@@ -3122,9 +3123,9 @@ tbody.collapse.in {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
 
 .card-footer {
-  padding: 0.75rem 1.25rem;
+  padding: 0.25rem 0.25rem;
   background-color: #f5f5f5;
-  border-top: 1px solid rgba(0, 0, 0, 0.125); }
+  border-top: 1px solid rgba(0, 0, 0, 0.6); }
   .card-footer::after {
     content: "";
     display: table;
@@ -3133,14 +3134,14 @@ tbody.collapse.in {
     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
 
 .card-header-tabs {
-  margin-right: -0.625rem;
-  margin-bottom: -0.75rem;
-  margin-left: -0.625rem;
+  margin-right: -0.125rem;
+  margin-bottom: -0.25rem;
+  margin-left: -0.125rem;
   border-bottom: 0; }
 
 .card-header-pills {
-  margin-right: -0.625rem;
-  margin-left: -0.625rem; }
+  margin-right: -0.125rem;
+  margin-left: -0.125rem; }
 
 .card-primary {
   background-color: #0275d8;
@@ -3249,7 +3250,7 @@ tbody.collapse.in {
     display: flex;
     flex-flow: row wrap;
     margin-right: -0.625rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
     margin-left: -0.625rem; }
     .card-deck .card {
       flex: 1 0 0;
@@ -5076,3 +5077,46 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+.avam-strategy {
+  color: #c8c8c8; }
+
+.container-fluid {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px; }
+
+.col-xs-sm {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.form-control {
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 1px;
+  padding-right: 1px; }
+
+.btn-sm, .btn-group-sm > .btn {
+  padding: 0.2rem 0.4rem; }
+
+.strategy-leg-sell {
+  border: 1px solid red;
+  border-radius: 2px; }
+  .strategy-leg-sell > .header {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    background-color: red; }
+
+.strategy-leg-buy {
+  border: 1px solid green;
+  border-radius: 2px; }
+  .strategy-leg-buy > .header {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    background-color: green; }

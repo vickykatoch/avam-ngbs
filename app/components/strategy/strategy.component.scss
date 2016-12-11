@@ -1,1 +1,49 @@
 @import "styles/bootstrap-override";
+
+.avam-strategy{
+    color:#c8c8c8;
+}
+.container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.col-xs-sm {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.form-control {
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left:1px;
+    padding-right:1px;
+}
+.btn-sm {
+    padding: 0.2rem 0.4rem;
+}
+.strategy-leg-sell {    
+    border: 1px solid red;
+    border-radius: 2px;
+    > .header {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        background-color: red;
+    }
+
+}
+.strategy-leg-buy {
+    border: 1px solid green;
+    border-radius: 2px;
+    > .header {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        background-color: green;
+    }
+
+}

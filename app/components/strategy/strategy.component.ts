@@ -4,11 +4,17 @@ import { Component, OnInit } from '@angular/core';
   moduleId: module.id,
   selector: 'avam-strategy',
   templateUrl: './strategy.component.html',
-  styleUrls: ['./strategy.component.css']
+  styleUrls: ['strategy.component.css']
 })
 export class StrategyComponent implements OnInit {
 
+  isOrderTicket: boolean = false;
+
   constructor() { }
+
+  toggleOrderTicket(isOrderTicket: boolean) : void {
+    this.isOrderTicket=isOrderTicket;
+  }
 
   ngOnInit() {
   }
