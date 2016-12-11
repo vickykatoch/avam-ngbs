@@ -1,0 +1,20 @@
+{
+  "name": "avam-ngbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vickykatoch/avam-ngbs"
+  },
+  "keywords": [],
+  "author": "Balwinder Katoch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickykatoch/avam-ngbs/issues"
+  },
+  "homepage": "https://github.com/vickykatoch/avam-ngbs"
+}
