@@ -1,4 +1,4 @@
-<form class="container-fluid">
+<form class="container-fluid" [formGroup]="orderTicketForm" (ngSubmit)="submit(orderTicketForm.value)">
   <div class="row">
     <div class="col-xs">
       <p><strong>Order Ticket [5vs7_Curve]</strong></p>
@@ -12,20 +12,20 @@
     <div class="col-xs">
       <div class="form-group">
         <label for="market">Market</label>
-        <input type="number" class="form-control form-control-sm" id="market">
+        <input type="number" class="form-control form-control-sm" id="market" [formControl]= "orderTicketForm.controls['market']" >
       </div>
     </div>
     <div class="col-xs">
       <div class="form-group">
         <label for="target">Target</label>
-        <input type="number" class="form-control form-control-sm" id="target">
+        <input type="number" class="form-control form-control-sm" id="target" [formControl]= "orderTicketForm.controls['target']">
 
       </div>
     </div>
     <div class="col-xs">
       <div class="form-group">
         <label for="delta">Delta</label>
-        <input type="number" class="form-control form-control-sm" id="delta">
+        <input type="number" class="form-control form-control-sm" id="delta" [formControl]= "orderTicketForm.controls['delta']">
 
       </div>
     </div>
@@ -112,7 +112,7 @@
   <div class="row mt-1 ">
     <div class="col-xs text-xs-right">
       <!--<div class=" btn-group" >-->
-        <button type="button" class="btn btn-sm btn-danger">Submit</button>
+        <button type="submit" class="btn btn-sm btn-danger">Submit</button>
         <button type="button" class="btn btn-sm btn-primary">Reset</button>
       <!--</div>-->
     </div>
