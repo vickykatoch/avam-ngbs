@@ -6,6 +6,6 @@ module.exports = (function(){
             root : path.join(__dirname,'../'),
             bsPath : path.join(__dirname,'../bsp-override'),
             styleTarget: path.join(__dirname,'../styles'),
-            strategy : path.join(__dirname,'../app/components')
+            components : path.join(__dirname,'../app/components')
       };
 })();

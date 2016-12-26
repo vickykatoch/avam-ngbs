@@ -1,0 +1,7 @@
+<div class="num-spinner">
+    <input type="text" name="num-spinner" (keydown.arrowUp) = "onMoveUp($event)" (keydown.arrowDown) = "onMoveDown($event)" >
+    <div class="spin-btn-box">
+        <i class="spin-btn arrow-up" (click)="onMoveUp($event)"></i>
+        <i class="spin-btn arrow-down" (click)="onMoveDown($event)"></i>
+    </div>   
+</div>

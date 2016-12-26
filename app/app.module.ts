@@ -3,18 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent }  from './app.component';
-import { StrategyComponent } from './components/strategy/strategy.component';
+import {HostComponent} from './components/host/host.component';
+import {NumberSpinnerComponent} from './components/numberspinner/numberspinner.component';
 
-import { StrategyDefinitionComponent } from './components/strategy/strategydefinition/strategydefinition.component';
-import { StrategyOrderTicketComponent } from './components/strategy/strategyorderticket/strategyorderticket.component';
+import {StrategyBuilderComponent} from './components/strategy/strategybuilder.component';
+
+
 
 @NgModule({
   imports:      [ BrowserModule,FormsModule, ReactiveFormsModule ],
   declarations: [ 
-                  AppComponent,
-                  StrategyComponent,
-                  StrategyDefinitionComponent,
-                  StrategyOrderTicketComponent
+                  AppComponent, 
+                  HostComponent ,
+                  NumberSpinnerComponent,
+                  StrategyBuilderComponent                
              ],
   bootstrap:    [ AppComponent ]
 })

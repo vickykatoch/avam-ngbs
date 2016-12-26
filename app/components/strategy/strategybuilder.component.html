@@ -1,0 +1,25 @@
+<form novalidate>
+    <div class="row">
+        <div class="col-xs">
+            <div class="form-group">
+                <label for="alias">Alias</label>
+                <input type="text" class="form-control form-control-sm" name="alias">
+            </div>
+        </div>
+        <div class="col-xs">
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control form-control-sm" name="description" >
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs">
+            <div class="form-group">
+                <label for="tmp">Updown Number</label>
+                <falcon-number-spinner name="alias" (moveUp)="onMoveUp($event)" (moveDown)="onMoveDown($event)">
+                </falcon-number-spinner>
+            </div>
+        </div>
+    </div>
+</form>

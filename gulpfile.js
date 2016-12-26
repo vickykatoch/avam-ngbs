@@ -10,7 +10,7 @@ gulp.task('bs-sass', function(){
             .pipe(gulp.dest(config.styleTarget));
 });
 gulp.task('comp-sass', function(){
-      var sassPath = config.strategy + "/**/*.scss";
+      var sassPath = config.components + "/**/*.scss";
        gulp.src([sassPath])
             .pipe(sass().on('error', sass.logError))
             .pipe(gulp.dest(function(file){
@@ -19,7 +19,7 @@ gulp.task('comp-sass', function(){
 })
 
 gulp.task('watch', function(){
-      var sassPath = config.strategy + "/**/*.scss";
+      var sassPath = config.components + "/**/*.scss";
       gulp.watch(sassPath, ['comp-sass']);
       var bsSassPath = config.bsPath + "/*.scss";
       gulp.watch(bsSassPath, ['bs-sass']);
