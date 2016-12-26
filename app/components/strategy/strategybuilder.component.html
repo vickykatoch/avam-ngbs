@@ -17,7 +17,16 @@
         <div class="col-xs">
             <div class="form-group">
                 <label for="tmp">Updown Number</label>
-                <falcon-number-spinner name="alias" (moveUp)="onMoveUp($event)" (moveDown)="onMoveDown($event)">
+                <falcon-number-spinner name="alias" 
+                    [decimalPlaces] = "2"
+                    [value] = "value"
+                    (moveUp)="onMoveUp($event)" 
+                    (moveDown)="onMoveDown($event)"
+                    >
+                    <!--(moveUp)="onMoveUp($event)" 
+                    (moveDown)="onMoveDown($event)"
+                    [step] = "0.1"
+                    -->
                 </falcon-number-spinner>
             </div>
         </div>

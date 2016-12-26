@@ -7,16 +7,17 @@ import { Component, OnInit } from '@angular/core';
     
 })
 export class StrategyBuilderComponent implements OnInit {
+    value: number=10;
+
     constructor() { }
     ngOnInit() { }
 
-    // styleUrls: ['strategybuilder.component']
-    // region
+    
     onMoveUp(evt: any) : void {
-        console.log('Up')
+        this.value = this.value + 2;
     }
     onMoveDown(evt: any) : void {
-        console.log('Down')
+        this.value = this.value - 2;
     }
     // endregion
 
