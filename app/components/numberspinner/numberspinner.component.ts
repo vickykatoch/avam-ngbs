@@ -51,6 +51,12 @@ export class NumberSpinnerComponent implements OnInit, ControlValueAccessor, OnC
         if (changes["format"]) {
             this.valueFormatter = NumberFormatterResolver.resolve(changes["format"].currentValue);
         }
+        if(changes["step"]) {
+            this.step = Number.parseFloat(changes["step"].currentValue);
+            if(!this.step) {
+                this.step = 0;
+            }
+        }
         if (changes["minValue"]) {
             this.minValidatorFn = NumberValidationFactory.validateMinValue(this.minValue);
         }

@@ -20,13 +20,12 @@
                 <falcon-number-spinner name="alias" required
                     #alias = "ngModel"                   
                     [decimalPlaces] = "2"
-                    step="1"
+                    step=""
                     [(ngModel)] = "value"
                    
                     [minValue] = "10"
                     [maxValue] = "20"
-                    (moveUp)="onMoveUp($event)" 
-                    (moveDown)="onMoveDown($event)"
+                    
                     >
                     <!--(moveUp)="onMoveUp($event)" 
                     (moveDown)="onMoveDown($event)"
