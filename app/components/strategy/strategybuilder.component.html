@@ -1,4 +1,4 @@
-<form novalidate>
+<form novalidate #form="ngForm">
     <div class="row">
         <div class="col-xs">
             <div class="form-group">
@@ -17,17 +17,33 @@
         <div class="col-xs">
             <div class="form-group">
                 <label for="tmp">Updown Number</label>
-                <falcon-number-spinner name="alias" 
+                <falcon-number-spinner name="alias" required
+                    #alias = "ngModel"                   
                     [decimalPlaces] = "2"
-                    [value] = "value"
+                    step="1"
+                    [(ngModel)] = "value"
+                   
+                    [minValue] = "10"
+                    [maxValue] = "20"
                     (moveUp)="onMoveUp($event)" 
                     (moveDown)="onMoveDown($event)"
                     >
                     <!--(moveUp)="onMoveUp($event)" 
                     (moveDown)="onMoveDown($event)"
                     [step] = "0.1"
+                    [isReadonly] = "true"
+                    [format] = "'TREASURY'"
                     -->
                 </falcon-number-spinner>
+                <div class="error" *ngIf="alias.errors && alias.errors.required">
+                    field is required
+                </div>
+                <div class="error" *ngIf="alias.errors && alias.errors.minValue">
+                    Minimum value is 10
+                </div>
+                <div class="error" *ngIf="alias.errors && alias.errors.maxValue">
+                    Maximum value is 20
+                </div>
             </div>
         </div>
     </div>

@@ -1,8 +1,11 @@
 <div class="num-spinner">
     <input type="text" name="num-spinner" 
+        [readonly] = "isReadonly"
         (keypress) = "onKeyPress($event)"
         (keydown.arrowUp) = "onMoveUp($event)" 
-        (keydown.arrowDown) = "onMoveDown($event)" [(ngModel)]="displayValue"
+        (keydown.arrowDown) = "onMoveDown($event)" 
+        [(ngModel)]="value"
+        (blur) = "updateModel($event)"
         (change)="onValueChange($event)">
     <div class="spin-btn-box">
         <i class="spin-btn arrow-up" (click)="onMoveUp($event)"></i>
