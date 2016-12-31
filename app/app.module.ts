@@ -9,6 +9,10 @@ import {NumberSpinnerComponent} from './components/numberspinner/numberspinner.c
 import {StrategyBuilderComponent} from './components/strategy/strategybuilder.component';
 
 
+import {GridComponent} from './components/grid/grid.component';
+
+import {GridSettingsComponent} from './components/grid-settings/grid-settings.component';
+
 
 @NgModule({
   imports:      [ BrowserModule,FormsModule, ReactiveFormsModule ],
@@ -16,7 +20,9 @@ import {StrategyBuilderComponent} from './components/strategy/strategybuilder.co
                   AppComponent, 
                   HostComponent ,
                   NumberSpinnerComponent,
-                  StrategyBuilderComponent                
+                  StrategyBuilderComponent,
+                  GridComponent,
+                  GridSettingsComponent            
              ],
   bootstrap:    [ AppComponent ]
 })

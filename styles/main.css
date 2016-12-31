@@ -1,0 +1,12 @@
+html {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  background: #272b30;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff; }

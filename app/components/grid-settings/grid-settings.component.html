@@ -1,0 +1,27 @@
+<div class="container-fluid">
+      <div class="card">
+            <div class="card-header">
+                  <div class="bs-row">
+                        <!--<div class="col-xs-1">
+                              <i class="fa fa-cog" aria-hidden="true"></i>
+                        </div>-->
+                        <div class="col-xs-11">
+                              <ng-content select=".grid-settings-toolbar"></ng-content>
+                        </div>
+                        <div class="col-xs text-xs-right">
+                              <i class="fa" 
+                                    [ngClass]="{'fa-chevron-down': !isPanelOpen, 'fa-chevron-up' : isPanelOpen}"
+                                    aria-hidden="true" (click)="isPanelOpen=!isPanelOpen"></i>
+                        </div>
+                  </div>
+            </div>
+            <div class="card-block" [ngClass]="{'panel-open': isPanelOpen, 'panel-close' : !isPanelOpen}">
+                  <h1>This area will contain the settings ui</h1>
+            </div>
+            <div class="card-block">
+                  <ng-content select=".grid-settings-content"></ng-content>
+            </div>
+      </div>
+</div>
+
+<!--https://toddmotto.com/transclusion-in-angular-2-with-ng-content-->
