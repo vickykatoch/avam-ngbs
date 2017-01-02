@@ -12,6 +12,8 @@ import {StrategyBuilderComponent} from './components/strategy/strategybuilder.co
 import {GridComponent} from './components/grid/grid.component';
 
 import {GridSettingsComponent} from './components/grid-settings/grid-settings.component';
+import {GridSettingsFormComponent} from './components/grid-settings/settings-form.component';
+
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import {GridSettingsComponent} from './components/grid-settings/grid-settings.co
                   NumberSpinnerComponent,
                   StrategyBuilderComponent,
                   GridComponent,
-                  GridSettingsComponent            
+                  GridSettingsComponent,
+                  GridSettingsFormComponent           
              ],
   bootstrap:    [ AppComponent ]
 })

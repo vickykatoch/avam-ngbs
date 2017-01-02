@@ -1,0 +1,41 @@
+<form class="container-fluid">
+      <div class="bs-row">
+            <div class="col-xs">
+                  <div class="form-group">
+                        <label class="col-form-label-sm">Columns</label>
+                        <select class="form-control form-control-sm">
+                              <option value="symbol">Symbol</option>
+                              <option value="exDestination">Destination</option>
+                              <option value="side">Side</option>
+                              <option value="price">Price</option>
+                        </select>
+                  </div>
+            </div>
+            <div class="col-xs">
+                   <div class="form-group">
+                        <label class="col-form-label-sm">Current Caption</label>
+                        <input type="text" class="form-control form-control-sm" disabled>
+                   </div>
+            </div>
+            <div class="col-xs">
+                   <div class="form-group">
+                        <label class="col-form-label-sm">New Caption</label>
+                        <input type="text" class="form-control form-control-sm">
+                   </div>
+            </div>
+      </div>
+      <div class="bs-row">
+            <div class="col-xs">
+                  <div class="btn-group">
+                        <button class="btn btn-sm" [ngClass]="{'btn-primary': isVisible, 'btn-secondary' : !isVisible}" (click)="isVisible=true">Visble</button>
+                        <button class="btn btn-sm" [ngClass]="{'btn-primary': !isVisible, 'btn-secondary' : isVisible}" (click)="isVisible=false">Hidden</button>
+                  </div>
+            </div>
+      </div>
+      <div class="bs-row mt-1">
+            <div class="col-xs text-xs-right">
+                  <input type="button" value="Save" class="btn btn-sm btn-default">
+                  <input type="reset" value="Reset" class="btn btn-sm btn-danger">
+            </div>
+      </div>
+</form>
