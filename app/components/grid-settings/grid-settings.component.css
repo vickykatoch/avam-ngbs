@@ -1,11 +1,11 @@
 .panel-open {
   height: 140px;
-  transition: height 150ms; }
+  transition: height 300ms; }
 
 .panel-close {
   height: 0;
   overflow: hidden;
-  transition: height 150ms;
+  transition: height 300ms;
   padding-bottom: 0; }
 
 .fa-15x {
