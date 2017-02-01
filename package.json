@@ -35,7 +35,7 @@
     "@types/jasmine": "^2.5.36",
     "@types/node": "^6.0.46",
     "@types/selenium-webdriver": "^2.53.33",
-    "bootstrap": "^4.0.0-alpha.5",
+    "bootstrap": "^4.0.0-alpha.6",
     "canonical-path": "0.0.2",
     "concurrently": "^3.1.0",
     "gulp": "^3.9.1",

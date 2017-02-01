@@ -12,8 +12,8 @@ import { NgForm, AbstractControl } from '@angular/forms';
 export class TemplateFormComponent implements OnInit {
   order: IOrder;
   
-  @ViewChild('orderNumber') orderNumberField;
-  @ViewChild('orderTotal') orderTotalField; 
+  // @ViewChild('orderNumber') orderNumberField;
+  // @ViewChild('orderTotal') orderTotalField; 
 
   constructor() { 
     this.order = this.createNewOrder();
@@ -21,12 +21,12 @@ export class TemplateFormComponent implements OnInit {
 
 
   ngOnInit() {
-    this.orderNumberField.control.valueChanges.subscribe((val: any)=> {
-      if(val) {
-        this.orderTotalField.control.updateValueAndValidity();
-        (<AbstractControl>this.orderTotalField.control).markAsTouched();
-      }
-    });
+    // this.orderNumberField.control.valueChanges.subscribe((val: any)=> {
+    //   if(val) {
+    //     this.orderTotalField.control.updateValueAndValidity();
+    //     (<AbstractControl>this.orderTotalField.control).markAsTouched();
+    //   }
+    // });
     
    // console.log(this.orderNumberField.value);
   }

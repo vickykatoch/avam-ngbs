@@ -9,8 +9,16 @@ gulp.task('bs-sass', function(){
             .pipe(sass().on('error', sass.logError))
             .pipe(gulp.dest(config.styleTarget));
 });
+gulp.task('layout-sass',function(){
+      var sassPath = config.layout + "/*.scss";
+      var targetPath = config.layout + "/compiled";
+      gulp.src([sassPath])
+            .pipe(sass().on('error', sass.logError))
+            .pipe(gulp.dest(targetPath));
+});
 gulp.task('comp-sass', function(){
       var sassPath = config.components + "/**/*.scss";
+      
        gulp.src([sassPath])
             .pipe(sass().on('error', sass.logError))
             .pipe(gulp.dest(function(file){
