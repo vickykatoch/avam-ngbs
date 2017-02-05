@@ -19,7 +19,22 @@
             <div class="card-block">
                   <ng-content select=".grid-settings-content"></ng-content>
             </div>
+            <div class="card-block">
+                  <button class="btn btn-sm btn-success" (click)="onSuccess()">
+                        Success
+                  </button>
+                  <button class="btn btn-sm btn-primary" (click)="onInfo()">
+                        Info
+                  </button>
+                  <button class="btn btn-sm btn-warning" (click)="onWarning()">
+                        Warning
+                  </button>
+                  <button class="btn btn-sm btn-danger" (click)="onError()">
+                        Error
+                  </button>
+            </div>
       </div>
+      <growl-alert [options]="options"></growl-alert>
 </div>
 
 <!--https://toddmotto.com/transclusion-in-angular-2-with-ng-content-->

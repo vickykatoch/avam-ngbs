@@ -13,11 +13,12 @@ import {GridComponent} from './components/grid/grid.component';
 
 import {GridSettingsComponent} from './components/grid-settings/grid-settings.component';
 import {GridSettingsFormComponent} from './components/grid-settings/settings-form.component';
-
+// import {GrowlModule} from 'primeng/primeng';
+import { GrowlAlertModule } from './components/growl-alert/index';
 
 
 @NgModule({
-  imports:      [ BrowserModule,FormsModule, ReactiveFormsModule ],
+  imports:      [ BrowserModule,FormsModule, ReactiveFormsModule, GrowlAlertModule ],
   declarations: [ 
                   AppComponent, 
                   HostComponent ,
