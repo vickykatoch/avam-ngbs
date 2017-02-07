@@ -1,0 +1,26 @@
+.success {
+  background: #5cb85c;
+  color: #fff; }
+
+.info {
+  background: #0275d8;
+  color: #fff; }
+
+.warn {
+  background: #f0ad4e;
+  color: #fff; }
+
+.error {
+  background: #d9534f;
+  color: #fff; }
+
+.alert-header {
+  border: 1px solid #000;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  height: 25px; }
+
+.arrow {
+  top: 3px;
+  position: absolute;
+  right: 5px; }

@@ -15,10 +15,11 @@ import {GridSettingsComponent} from './components/grid-settings/grid-settings.co
 import {GridSettingsFormComponent} from './components/grid-settings/settings-form.component';
 // import {GrowlModule} from 'primeng/primeng';
 import { GrowlAlertModule } from './components/growl-alert/index';
-
+import { StickyAlertModule } from './components/sticky-alert/index';
+import { AnimationComponent } from './components/animation/animation.component';
 
 @NgModule({
-  imports:      [ BrowserModule,FormsModule, ReactiveFormsModule, GrowlAlertModule ],
+  imports:      [ BrowserModule,FormsModule, ReactiveFormsModule, GrowlAlertModule , StickyAlertModule],
   declarations: [ 
                   AppComponent, 
                   HostComponent ,
@@ -26,7 +27,8 @@ import { GrowlAlertModule } from './components/growl-alert/index';
                   StrategyBuilderComponent,
                   GridComponent,
                   GridSettingsComponent,
-                  GridSettingsFormComponent           
+                  GridSettingsFormComponent,
+                  AnimationComponent          
              ],
   bootstrap:    [ AppComponent ]
 })
