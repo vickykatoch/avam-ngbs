@@ -2,7 +2,7 @@
       <div class="bs-row" [ngClass]="message?.type"> 
             <div class="col-xs alert-header" >
                   <i class="fa fa-2x fa-angle-double-down arrow" aria-hidden="true"></i>
-                  <span >{{message?.message}}</span>
+                  <span style="margin-top: 3px;">{{message?.message}}</span>
             </div>
       </div>
       <div class="bs-row" *ngFor="let msg of messages" [ngClass]="msg?.type">

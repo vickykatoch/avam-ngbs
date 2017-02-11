@@ -17,9 +17,18 @@ import {GridSettingsFormComponent} from './components/grid-settings/settings-for
 import { GrowlAlertModule } from './components/growl-alert/index';
 import { StickyAlertModule } from './components/sticky-alert/index';
 import { AnimationComponent } from './components/animation/animation.component';
+import { CustomInputModule } from './components/custom-input/custom-input.module';
+
 
 @NgModule({
-  imports:      [ BrowserModule,FormsModule, ReactiveFormsModule, GrowlAlertModule , StickyAlertModule],
+  imports:      [ 
+    BrowserModule,
+    FormsModule, 
+    ReactiveFormsModule, 
+    GrowlAlertModule , 
+    StickyAlertModule, 
+    CustomInputModule
+  ],
   declarations: [ 
                   AppComponent, 
                   HostComponent ,
