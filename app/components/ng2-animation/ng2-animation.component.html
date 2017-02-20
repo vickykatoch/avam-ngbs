@@ -1,0 +1,29 @@
+<div class="container-fluid">
+      <div class="bs-row">
+            <div class="col-xs">
+                  <h4>Market Watch</h4>
+            </div>
+            <div class="col-xs text-xs-right">
+                  <span (click)="popupState = 'visible'" >
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                  </span>
+                  <div class="popup"  [@iSetsPupup]="popupState">
+                        <button class="btn btn-primary btn-sm" (click)="popupState = 'hidden'">
+                              OK
+                        </button>
+                  </div>
+            </div>
+      </div>
+      <div class="bs-row">
+            <div class="col-xs">
+                  This seed repo serves as an Angular 2 starter for anyone looking to get up and running with Angular 2 and TypeScript fast. Using a Webpack 2 for building our files and assisting with boilerplate. We're also using Protractor for our end-to-end story and Karma for our unit tests.
+            </div>
+      </div>
+      <div class="bs-row">
+            <div class="col-xs text-xs-right">
+                  <button class="btn btn-sm btn-primary">
+                        OK
+                  </button>
+            </div>
+      </div>
+</div>

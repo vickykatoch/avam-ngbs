@@ -18,7 +18,7 @@ import { GrowlAlertModule } from './components/growl-alert/index';
 import { StickyAlertModule } from './components/sticky-alert/index';
 import { AnimationComponent } from './components/animation/animation.component';
 import { CustomInputModule } from './components/custom-input/custom-input.module';
-
+import { Ng2AnimationModule } from './components/ng2-animation/index';
 
 @NgModule({
   imports:      [ 
@@ -27,7 +27,8 @@ import { CustomInputModule } from './components/custom-input/custom-input.module
     ReactiveFormsModule, 
     GrowlAlertModule , 
     StickyAlertModule, 
-    CustomInputModule
+    CustomInputModule,
+    Ng2AnimationModule
   ],
   declarations: [ 
                   AppComponent, 
